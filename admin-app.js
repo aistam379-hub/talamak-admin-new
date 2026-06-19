@@ -1039,15 +1039,13 @@ function buildFormHTML(catId, data = {}) {
     </div>`;
   }
   s3 += `<div class="form-group fp-full"><label class="form-label">الصور (حتى 5 صور)</label><div class="form-images" id="imgSlotsWrap">${imgSlots}</div></div>`;
-  s3 += `<div class="fp-toggles-row">
-      <div class="form-group">
-        <input type="checkbox" id="fFeatured" ${data.featured ? 'checked' : ''} style="width:18px;height:18px;accent-color:var(--primary)">
-        <label for="fFeatured" style="font-size:13px;font-weight:700;color:var(--s700);cursor:pointer">إعلان مميز</label>
-      </div>
-      <div class="form-group">
-        <input type="checkbox" id="fNegotiable" ${data.negotiable ? 'checked' : ''} style="width:18px;height:18px;accent-color:var(--teal)">
-        <label for="fNegotiable" style="font-size:13px;font-weight:700;color:var(--s700);cursor:pointer">قابل للتفاوض</label>
-      </div>
+  s3 += `<div class="form-group" style="display:flex;align-items:center;gap:10px;margin-top:14px">
+      <input type="checkbox" id="fFeatured" ${data.featured ? 'checked' : ''} style="width:18px;height:18px;accent-color:var(--primary)">
+      <label for="fFeatured" style="font-size:13px;font-weight:700;color:var(--s700);cursor:pointer">إعلان مميز</label>
+    </div>
+    <div class="form-group" style="display:flex;align-items:center;gap:10px;margin-top:14px">
+      <input type="checkbox" id="fNegotiable" ${data.negotiable ? 'checked' : ''} style="width:18px;height:18px;accent-color:var(--teal)">
+      <label for="fNegotiable" style="font-size:13px;font-weight:700;color:var(--s700);cursor:pointer">قابل للتفاوض</label>
     </div>`;
 
   return `<div class="fp-sec fp-sec-1"><div class="fp-sec-title">معلومات الإعلان</div><div class="fp-sec-grid">${s1}</div></div>`
