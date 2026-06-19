@@ -824,7 +824,7 @@ html[data-theme="dark"] .theme-toggle .ic-moon{ display:none; }
 
 /* full-page form grid (mirrors the old modal-body 2-col layout) */
 .fp-form-grid{
-  display:grid; grid-template-columns:1fr 1fr; gap:20px;
+  display:grid; grid-template-columns:1fr; gap:20px;
   grid-auto-rows:max-content; width:100%;
 }
 .fp-form-grid > .form-group:first-child{ grid-column:1 / -1; }
